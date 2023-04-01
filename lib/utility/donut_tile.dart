@@ -33,21 +33,69 @@ class DonutTile extends StatelessWidget {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                    color: donutColor,
-                    borderRadius: BorderRadius.circular(borderRadius),
+                    color: donutColor[100],
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(borderRadius),
+                      topRight: Radius.circular(borderRadius),
+                    ),
                   ),
                   padding: EdgeInsets.all(borderRadius),
                   child: Text(
-                    donutPrice,
+                    "£$donutPrice",
+                    style: TextStyle(
+                      color: donutColor[800], 
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18.0,
+                    ),
                   ),
                 )
               ],
             ),
             // donut picture
-
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 36.0, 
+                vertical: borderRadius,
+              ),
+              child: Image.asset(imageName),
+            ),
+            
             // donut flavor
+            Text(
+              donutFlavour, 
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            ),
+
+            const SizedBox(height: 4,),
+
+            Text(
+              "Krispy Kreme",
+              style: TextStyle(color: Colors.grey[700]),
+            ),
 
             // love icon & add to cart button
+            Padding(
+              padding: EdgeInsets.all(borderRadius),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  // love icon
+                  Icon(
+                    Icons.favorite, 
+                    color: Colors.pink[400],
+                  ),
+            
+                  // plus button
+                  Icon(
+                    Icons.add, 
+                    color: Colors.grey[800],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
