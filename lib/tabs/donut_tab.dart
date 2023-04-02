@@ -4,12 +4,12 @@ import '../utility/donut_tile.dart';
 
 class DonutTab extends StatelessWidget {
   // list of donuts
-  List donutsOnSale = [
+  final List donutsOnSale = [
     // [donutFlavor, donutPrice, donutColor, imageName]
-    ["Chocolate", "7", Colors.brown, "lib/images/chocolate_donut.png"],
-    ["Grape", "4", Colors.purple, "lib/images/grape_donut.png"],
-    ["Ice Cream", "12", Colors.blue, "lib/images/icecream_donut.png"],
-    ["Strawberry", "9", Colors.red, "lib/images/strawberry_donut.png"],
+    ["Chocolate", "7", Colors.brown, "lib/images/donuts/chocolate_donut.png"],
+    ["Grape", "4", Colors.purple, "lib/images/donuts/grape_donut.png"],
+    ["Ice Cream", "12", Colors.blue, "lib/images/donuts/icecream_donut.png"],
+    ["Strawberry", "9", Colors.red, "lib/images/donuts/strawberry_donut.png"],
   ];
 
   @override

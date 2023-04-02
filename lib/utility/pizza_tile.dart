@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class DonutTile extends StatelessWidget {
-  final String donutFlavour;
-  final String donutPrice;
-  final MaterialColor donutColor;
+class PizzaTile extends StatelessWidget {
+  final String pizzaFlavour;
+  final String pizzaPrice;
+  final MaterialColor pizzaColor;
   final String imageName;
 
   final double borderRadius = 12.0;
 
-  const DonutTile({
+  const PizzaTile({
     super.key,
-    required this.donutFlavour,
-    required this.donutPrice,
-    required this.donutColor,
+    required this.pizzaFlavour,
+    required this.pizzaPrice,
+    required this.pizzaColor,
     required this.imageName,
   });
 
@@ -22,7 +22,7 @@ class DonutTile extends StatelessWidget {
       padding: EdgeInsets.all(borderRadius),
       child: Container(
         decoration: BoxDecoration(
-          color: donutColor[50],
+          color: pizzaColor[50],
           borderRadius: BorderRadius.circular(borderRadius),
         ),
         child: Column(
@@ -33,7 +33,7 @@ class DonutTile extends StatelessWidget {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                    color: donutColor[100],
+                    color: pizzaColor[100],
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(borderRadius),
                       topRight: Radius.circular(borderRadius),
@@ -41,9 +41,9 @@ class DonutTile extends StatelessWidget {
                   ),
                   padding: EdgeInsets.all(borderRadius),
                   child: Text(
-                    "£$donutPrice",
+                    "£$pizzaPrice",
                     style: TextStyle(
-                      color: donutColor[800], 
+                      color: pizzaColor[800], 
                       fontWeight: FontWeight.bold,
                       fontSize: 18.0,
                     ),
@@ -62,7 +62,7 @@ class DonutTile extends StatelessWidget {
             
             // donut flavor
             Text(
-              donutFlavour, 
+              pizzaFlavour, 
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
@@ -72,7 +72,7 @@ class DonutTile extends StatelessWidget {
             const SizedBox(height: 4,),
 
             Text(
-              "Krispy Kreme",
+              "Dominoes",
               style: TextStyle(color: Colors.grey[700]),
             ),
 
