@@ -69,14 +69,14 @@ class DonutTile extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 4,),
+            const SizedBox(height: 4.0),
 
             Text(
               "Krispy Kreme",
               style: TextStyle(color: Colors.grey[700]),
             ),
 
-            const SizedBox(height: 12.0),
+            const SizedBox(height: 8.0),
             // love icon & add to cart button
             Padding(
               padding: EdgeInsets.all(borderRadius),

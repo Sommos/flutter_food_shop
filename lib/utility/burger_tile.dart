@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class PizzaTile extends StatelessWidget {
-  final String pizzaFlavour;
-  final String pizzaPrice;
-  final MaterialColor pizzaColor;
+class BurgerTile extends StatelessWidget {
+  final String burgerFlavour;
+  final String burgerPrice;
+  final MaterialColor burgerColor;
   final String imageName;
 
   final double borderRadius = 12.0;
 
-  const PizzaTile({
+  const BurgerTile({
     super.key,
-    required this.pizzaFlavour,
-    required this.pizzaPrice,
-    required this.pizzaColor,
+    required this.burgerFlavour,
+    required this.burgerPrice,
+    required this.burgerColor,
     required this.imageName,
   });
 
@@ -22,7 +22,7 @@ class PizzaTile extends StatelessWidget {
       padding: EdgeInsets.all(borderRadius),
       child: Container(
         decoration: BoxDecoration(
-          color: pizzaColor[50],
+          color: burgerColor[50],
           borderRadius: BorderRadius.circular(borderRadius),
         ),
         child: Column(
@@ -33,7 +33,7 @@ class PizzaTile extends StatelessWidget {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                    color: pizzaColor[100],
+                    color: burgerColor[100],
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(borderRadius),
                       topRight: Radius.circular(borderRadius),
@@ -41,9 +41,9 @@ class PizzaTile extends StatelessWidget {
                   ),
                   padding: EdgeInsets.all(borderRadius),
                   child: Text(
-                    "£$pizzaPrice",
+                    "£$burgerPrice",
                     style: TextStyle(
-                      color: pizzaColor[800], 
+                      color: burgerColor[800], 
                       fontWeight: FontWeight.bold,
                       fontSize: 18.0,
                     ),
@@ -51,7 +51,7 @@ class PizzaTile extends StatelessWidget {
                 )
               ],
             ),
-            // pizza picture
+            // burger picture
             Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 36.0, 
@@ -60,9 +60,9 @@ class PizzaTile extends StatelessWidget {
               child: Image.asset(imageName),
             ),
             
-            // pizza flavor
+            // burger flavor
             Text(
-              pizzaFlavour, 
+              burgerFlavour, 
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
@@ -72,7 +72,7 @@ class PizzaTile extends StatelessWidget {
             const SizedBox(height: 4.0),
 
             Text(
-              "Dominoes",
+              "McDonalds",
               style: TextStyle(color: Colors.grey[700]),
             ),
 

@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
     
-              const SizedBox(height: 24.0),
+              const SizedBox(height: 10.0),
 
               // tab bar
               TabBar(tabs: tabsList),

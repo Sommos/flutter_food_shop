@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import '../utility/pizza_tile.dart';
 
 class PizzaTab extends StatelessWidget {
-  // list of donuts
+  // list of pizzas
   final List donutsOnSale = [
     // [donutFlavor, donutPrice, donutColor, imageName]
-    ["Bucharesti", "11", Colors.brown, "lib/images/pizzas/bucharesti_pizza.png"],
-    ["Cheese", "13", Colors.yellow, "lib/images/pizzas/cheese_pizza.png"],
-    ["Pepperoni", "16", Colors.red, "lib/images/pizzas/pepperoni_pizza.png"],
-    ["Pineapple", "14", Colors.orange, "lib/images/pizzas/pineapple_pizza.png"],
+    ["Bucharesti", "11.99", Colors.brown, "lib/images/pizzas/bucharesti_pizza.png"],
+    ["Cheese", "13.99", Colors.yellow, "lib/images/pizzas/cheese_pizza.png"],
+    ["Pepperoni", "16.99", Colors.red, "lib/images/pizzas/pepperoni_pizza.png"],
+    ["Pineapple", "14.99", Colors.orange, "lib/images/pizzas/pineapple_pizza.png"],
   ];
 
   @override
