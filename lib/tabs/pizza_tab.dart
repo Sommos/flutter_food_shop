@@ -4,7 +4,7 @@ import '../utility/pizza_tile.dart';
 
 class PizzaTab extends StatelessWidget {
   // list of pizzas
-  final List donutsOnSale = [
+  final List pizzasOnSale = [
     // [donutFlavor, donutPrice, donutColor, imageName]
     ["Bucharesti", "11.99", Colors.brown, "lib/images/pizzas/bucharesti_pizza.png"],
     ["Cheese", "13.99", Colors.yellow, "lib/images/pizzas/cheese_pizza.png"],
@@ -12,10 +12,12 @@ class PizzaTab extends StatelessWidget {
     ["Pineapple", "14.99", Colors.orange, "lib/images/pizzas/pineapple_pizza.png"],
   ];
 
+  PizzaTab({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      itemCount: donutsOnSale.length,
+      itemCount: pizzasOnSale.length,
       padding: const EdgeInsets.all(12.0),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
@@ -23,10 +25,10 @@ class PizzaTab extends StatelessWidget {
       ),
       itemBuilder: (context, index) {
         return PizzaTile(
-          pizzaFlavour: donutsOnSale[index][0],
-          pizzaPrice: donutsOnSale[index][1],
-          pizzaColor: donutsOnSale[index][2],
-          imageName: donutsOnSale[index][3],
+          pizzaFlavour: pizzasOnSale[index][0],
+          pizzaPrice: pizzasOnSale[index][1],
+          pizzaColor: pizzasOnSale[index][2],
+          imageName: pizzasOnSale[index][3],
         );
       }
     );

@@ -3,14 +3,16 @@ import 'package:flutter/material.dart';
 import '../utility/smoothie_tile.dart';
 
 class SmoothieTab extends StatelessWidget {
-  // list of burgers
+  // list of smoothies
   final List smoothiesOnSale = [
     // [smoothiesFlavor, smoothiesPrice, smoothiesColor, imageName]
     ["Berries", "3", Colors.pink, "lib/images/smoothies/blueberry_smoothie.png"],
     ["Guava", "3", Colors.green, "lib/images/smoothies/guava_smoothie.png"],
-    ["Milkshake", "4", Colors.white, "lib/images/smoothies/strawberry_milkshake.png"],
+    ["Milkshake", "4", Colors.lightBlue, "lib/images/smoothies/strawberry_milkshake.png"],
     ["Strawberry", "3", Colors.red, "lib/images/smoothies/strawberry_smoothie.png"],
   ];
+
+  SmoothieTab({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../utility/pancakes_tile.dart';
 
 class PancakesTab extends StatelessWidget {
-  // list of burgers
+  // list of pancakes
   final List pancakesOnSale = [
     // [pancakesFlavor, pancakesPrice, pancakesColor, imageName]
     ["Berries", "8", Colors.pink, "lib/images/pancakes/berries_pancakes.png"],
@@ -11,6 +11,8 @@ class PancakesTab extends StatelessWidget {
     ["Cherry", "6", Colors.red, "lib/images/pancakes/cherry_pancakes.png"],
     ["Syrup", "4", Colors.orange, "lib/images/pancakes/syrup_pancakes.png"],
   ];
+
+  PancakesTab({super.key});
 
   @override
   Widget build(BuildContext context) {

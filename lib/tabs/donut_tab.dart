@@ -12,6 +12,8 @@ class DonutTab extends StatelessWidget {
     ["Strawberry", "9", Colors.red, "lib/images/donuts/strawberry_donut.png"],
   ];
 
+  DonutTab({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GridView.builder(

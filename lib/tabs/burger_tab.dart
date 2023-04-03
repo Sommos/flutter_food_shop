@@ -12,6 +12,8 @@ class BurgerTab extends StatelessWidget {
     ["Spam", "7", Colors.red, "lib/images/burgers/spam_burger.png"],
   ];
 
+  BurgerTab({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
