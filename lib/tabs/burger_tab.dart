@@ -9,7 +9,7 @@ class BurgerTab extends StatelessWidget {
     ["Meal", "10", Colors.cyan, "lib/images/burgers/burger_meal.png"],
     ["Cheese", "4", Colors.yellow, "lib/images/burgers/cheese_burger.png"],
     ["Seeded", "5", Colors.brown, "lib/images/burgers/seeded_cheeseburger.png"],
-    ["Spam", "7", Colors.red, "lib/image/burgers/spam_burger.png"],
+    ["Spam", "7", Colors.red, "lib/images/burgers/spam_burger.png"],
   ];
 
   @override
